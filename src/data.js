@@ -12,7 +12,7 @@ export const firstSubtext = "Yes, it’s YOU! A little surprise awaits..."
 // 2. Cake Screen
 // ==========================
 // Add recipient's name here.
-export const NAME = "Vaishu💙"
+export const NAME = "Vaishu!"
 
 
 // ==========================
