@@ -24,7 +24,7 @@ export default function PhotosScreen({ onNext }) {
         >
           {photoScreenHeading}
         </motion.h2>
-        <p className="text-sm text-rose-100/90 mt-1">(Swipe the cards)<br>(Pathu and Vaishu 😇🫂💙)</p>
+        <p className="text-sm text-rose-100/90 mt-1">(Pathu and Vaishu 😇🫂💙)</p>
       </div>
 
       <div className="relative flex justify-center">
