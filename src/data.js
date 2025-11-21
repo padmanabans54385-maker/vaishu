@@ -18,7 +18,7 @@ export const NAME = "Vaishu!"
 // ==========================
 // 3. Photo Screen
 // ==========================
-export const photoScreenHeading = "Some Sweet Moments With You"
+export const photoScreenHeading = "Some Sweet Moments With You (Pathu and Vaishu)😇🫂💙"
 // Heading above photos - Change this text as you like
 
 // Add your photos inside "public/images" folder
