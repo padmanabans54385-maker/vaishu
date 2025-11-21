@@ -6,7 +6,7 @@ import confetti from "canvas-confetti"
 import GradientButton from "../GradientButton"
 import { ArrowRight } from "lucide-react"
 
-const WORDS = ["You", "are", "a", "Eruma"]
+const WORDS = ["You", "are", "a", "Mental😂"]
 const balloons = [
     { id: 1, xPct: 20, topPct: 18, color: "#fb7185" }, // rose-400
     { id: 2, xPct: 40, topPct: 24, color: "#f59e0b" }, // amber-500
