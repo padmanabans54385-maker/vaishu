@@ -251,33 +251,46 @@ export default function Home() {
         </motion.button>
       )}
 
-      {step === "countdown" && (
-        <motion.div
-          initial={{ scale: 0.7, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="flex flex-col items-center gap-10 z-20"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold text-white tracking-wide drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]">
-            🎂Advance Happy Birthday Vaishu Eruma😍💙
-          </h1>
-          <p className="text-4xl md:text-5xl font-bold text-white tracking-wide drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]">(When Countdown Reach Zero the Surprise Gift Will be Open😁)</p>
-          <div className="flex gap-8 bg-black/50 px-8 py-6 rounded-2xl border-2 border-pink-400 shadow-[0_0_35px_rgba(255,0,200,0.6)]">
-            {[{ label: "Days", value: countdown.d }, { label: "Hours", value: countdown.h }, { label: "Minutes", value: countdown.m }, { label: "Seconds", value: countdown.s }].map((item, i) => (
-              <div key={i} className="flex flex-col items-center">
-                <div className="flex gap-1">
-                  {String(item.value).padStart(2, "0").split("").map((digit, di) => (
-                    <NeonDigit key={di} value={digit} animate={item.label === "Seconds"} />
-                  ))}
-                </div>
-                <p className="text-pink-300 mt-2 text-sm md:text-base font-semibold tracking-widest uppercase">
-                  {item.label}
-                </p>
-              </div>
+     {step === "countdown" && (
+  <motion.div
+    initial={{ scale: 0.7, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="flex flex-col items-center gap-6 sm:gap-8 z-20 px-4 text-center"
+  >
+    {/* Title */}
+    <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white leading-snug tracking-wide drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]">
+      🎂 Advance Happy Birthday{" "}
+      <span className="text-pink-400">Vaishu Eruma😍💙</span>
+    </h1>
+
+    {/* Subtitle */}
+    <p className="text-base sm:text-xl md:text-2xl text-white font-semibold leading-normal max-w-[90%] sm:max-w-[700px] drop-shadow-[0_0_20px_rgba(255,255,255,0.6)]">
+      (When Countdown Reach Zero the Surprise Gift Will be Open😁)
+    </p>
+
+    {/* Countdown container */}
+    <div className="flex flex-wrap justify-center gap-4 sm:gap-6 bg-black/50 px-5 sm:px-8 py-4 sm:py-6 rounded-2xl border-2 border-pink-400 shadow-[0_0_35px_rgba(255,0,200,0.6)] w-fit">
+      {[ 
+        { label: "Days", value: countdown.d },
+        { label: "Hours", value: countdown.h },
+        { label: "Minutes", value: countdown.m },
+        { label: "Seconds", value: countdown.s }
+      ].map((item, i) => (
+        <div key={i} className="flex flex-col items-center min-w-[60px] sm:min-w-[80px]">
+          <div className="flex gap-0.5 sm:gap-1 justify-center">
+            {String(item.value).padStart(2, "0").split("").map((digit, di) => (
+              <NeonDigit key={di} value={digit} animate={item.label === "Seconds"} />
             ))}
           </div>
-        </motion.div>
-      )}
+          <p className="text-pink-300 mt-1 sm:mt-2 text-xs sm:text-sm md:text-base font-semibold tracking-widest uppercase">
+            {item.label}
+          </p>
+        </div>
+      ))}
+    </div>
+  </motion.div>
+)}
     </motion.main>
   )
 }
