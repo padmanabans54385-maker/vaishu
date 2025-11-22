@@ -259,8 +259,9 @@ export default function Home() {
           className="flex flex-col items-center gap-10 z-20"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-wide drop-shadow-[0_0_25px_rgba(255,255,255,0.7)]">
-            🎂 BIRTHDAY COUNTDOWN 🎉
+            🎂Advance Happy Birthday Vaishu Eruma😍💙
           </h1>
+          <p>(When Countdown Reach Zero the Surprise Gift Will be Open😁)</p>
           <div className="flex gap-8 bg-black/50 px-8 py-6 rounded-2xl border-2 border-pink-400 shadow-[0_0_35px_rgba(255,0,200,0.6)]">
             {[{ label: "Days", value: countdown.d }, { label: "Hours", value: countdown.h }, { label: "Minutes", value: countdown.m }, { label: "Seconds", value: countdown.s }].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
