@@ -26,7 +26,7 @@ export default function Home() {
   const [decorationsOn, setDecorationsOn] = useState(false)
   const [musicOn, setMusicOn] = useState(false)
 
-  const targetDate = new Date("2025-11-22T18:02:00")
+  const targetDate = new Date("2025-11-28T00:00:00")
 
   // 🎉 fireworks effect
   const startFireworks = () => {
