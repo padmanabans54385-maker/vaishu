@@ -28,7 +28,7 @@ export default function Home() {
 
       if (diff <= 0) {
         clearInterval(t);
-        window.location.href = "/page2.jsx"; // redirect to local jsx file
+        window.location.href = "/page2"; // redirect to local jsx file
       }
 
       setCountdown({
