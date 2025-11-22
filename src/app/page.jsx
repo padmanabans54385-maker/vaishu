@@ -16,7 +16,7 @@ import FloatingHearts from "@/components/FloatingHearts"
 import BackgroundMusic from "@/components/BackgroundMusic"
 
 export default function Home() {
-  const IMAGES = ["/gallery/1.jpg", "/gallery/2.jpg", "/gallery/3.jpg", "/gallery/4.jpg", "/gallery/5.jpg"]
+  const IMAGES = ["/gallery/1.jpg", "/gallery/2.jpg", "/gallery/3.jpg", "/gallery/4.jpg", "/gallery/5.jpg", "/gallery/6.jpg", "/gallery/7.jpg"]
 
   const [step, setStep] = useState("intro")
   const [index, setIndex] = useState(0)
