@@ -216,7 +216,7 @@ export default function Home() {
 
       {step === "intro" && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col gap-6 z-10">
-          <h1 className="text-4xl text-pink-400 font-bold tracking-wide">🎉 Welcome to the Celebration 🎉</h1>
+          <h1 className="text-4xl text-pink-400 font-bold tracking-wide">🎉 Let's Start the Celebration 🎉</h1>
           <button
             onClick={startImages}
             className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl text-lg text-white shadow-[0_0_15px_rgba(255,0,255,0.6)]"
